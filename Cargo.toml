@@ -8,25 +8,25 @@ repository = "https://github.com/near/near-jsonrpc-client-rs"
 description = "Lower-level API for interfacing with the NEAR Protocol via JSONRPC"
 categories = ["asynchronous", "api-bindings", "network-programming"]
 keywords = ["near", "api", "jsonrpc", "rpc", "async"]
-rust-version = "1.68.2"
+rust-version = "1.70.0"
 
 [dependencies]
-log = "0.4.17"
-borsh = "0.10.2"
-serde = "1.0.145"
-reqwest = { version = "0.11.12", features = ["json"], default-features = false }
+log = "0.4"
+borsh = "0.10"
+serde = "1.0"
+reqwest = { version = "0.11", features = ["json"], default-features = false }
 thiserror = "1.0.37"
 serde_json = "1.0.85"
 lazy_static = "1.4.0"
 
-near-crypto = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.34.0-pt01' }
-near-primitives = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.34.0-pt01' }
-near-chain-configs = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.34.0-pt01' }
-near-jsonrpc-primitives = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.34.0-pt01' }
+near-crypto = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.35.0-pt01' }
+near-primitives = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.35.0-pt01' }
+near-chain-configs = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.35.0-pt01' }
+near-jsonrpc-primitives = { git = 'https://github.com/hexiaoyuan/nearcore.git', branch = '1.35.0-pt01' }
 
 [dev-dependencies]
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
-env_logger = "0.10.0"
+env_logger = "0.10"
 
 [features]
 default = ["native-tls"]
